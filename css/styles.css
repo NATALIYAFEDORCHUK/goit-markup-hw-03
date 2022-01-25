@@ -35,10 +35,7 @@ body {
     margin: 0 auto;
     outline: 1px solid #ECECEC;
 }
-.section{
-    /* padding-top: 94px;
-    padding-bottom: 94px; */
-}
+
 /*header*/
 
   .header{
@@ -96,7 +93,6 @@ body {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--heder-mailto-color);
-  margin-right: ;
 }
 .curent{
     color: var(--heder-mailto-color);
@@ -211,9 +207,7 @@ color: var(--heder-tel-color);
 
 
 /*Чем мы занимаемся*/
-.work{
-   /* padding-top: 94px; */
-}
+
 .work-list{
     display: flex;
     padding-bottom: 94px;
@@ -229,9 +223,6 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--heder-link-mailto);
 margin-bottom: 50px;
-}
-.work-section{
-    /* padding-bottom: 94px; */
 }
 
 /*Наша команда*/
@@ -280,17 +271,22 @@ color: var(--heder-tel-color);
 margin-bottom: 30px;
 }
 /*PORTFOLIO*/
+.heder-portfolio{
+    color: #FFFFFF;
+}
 .list-portfolio{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: 66px;
+    padding-bottom: 56px;
 }
-.list-btn+.list-btn{
-    margin-left: 8px;
-}
+.list-bt,
+ .list-btn:last-child {
+     margin: 8px;
+     border: none;
+ }
+    
 .list-bt{
-    font-weight: 500;
 font-size: 16px;
 line-height: 1.62;
 text-align: center;
@@ -326,39 +322,52 @@ border-radius: 4px;
 .list-btn:focus{
     color: var(--heder-mailto-color);
 }
+
+/*foto-list*/
+
 .foto-list{
+    padding: 0;
+    margin: 0;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    margin-left: -30px;
+    margin-top: -30px;
+    padding-bottom: 94px;
 }
-.list-img{
+.foto-list>.item-img{
+      flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.img{
+    display: block;
+    max-width: 100%;
+}
+
+.item-img{
     background: #FFFFFF;
 border: 1px solid #EEEEEE;
 box-sizing: border-box;
-
 }
 .foto-title{
-    padding: 20px 24px 4px 24px;
+    padding: 20px 24px 20px 24px;
+    background: #FFFFFF;
+border: 1px solid #EEEEEE;
+box-sizing: border-box;
 }
-/* .list-img+.list-img{
-    margin-left: 30px; */
-}
+
 .list-title{
-    font-weight: 700;
 font-size: 18px;
 line-height: 2.00;
 letter-spacing: 0.06em;
 color: var(--heder-link-mailto);
-margin: ;
 }
 .list-text{
 font-size: 16px;
 line-height: 1.87;
 letter-spacing: 0.03em;
 color: var(--heder-tel-color);
-margin-bottom: 184px; 
-
 }
 
 
@@ -367,6 +376,9 @@ margin-bottom: 184px;
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+.logotip{
+    margin-bottom: 20px;
 }
 .footer-link{padding-bottom: 20px;}
 .footer-address{
