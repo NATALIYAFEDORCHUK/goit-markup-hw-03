@@ -26,35 +26,44 @@ body {
 }
 .img{
     display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 .container{
     width: 1200px;
     padding-left: 15px;
-    padding: 15px;
+    padding-right: 15px;
     margin: 0 auto;
-    outline: 1px solid #ECECEC;
+     /* outline: 1px solid #ECECEC; */
 }
 
 /*header*/
 
   .header{
-      padding-top: 32px;
-      display: flex;
+      border-bottom: 1px;
+
+      /* padding-top: 32px;
+      display: flex; */
   }
 .heder-logo{
     display: flex;
+    align-items: center;
 } 
 .site-nav{
     display: flex;
     align-items: center;
 } 
-
 .list{
     display: flex;
     margin-left: auto;
-    align-items: center; 
-} 
+    align-items: center;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
 
 .header-item{
     margin-right: 50px;
@@ -65,6 +74,9 @@ body {
 .heder-connekt+.heder-connekt{
     margin-left: 50px;
 }
+/* .header-connekt:last-child{
+    margin-left: 0;
+} */
 
 .logo {
   font-family: "Raleway", sans-serif;
@@ -87,12 +99,13 @@ body {
 
 
 .header-link-line {
-  
+ padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--heder-mailto-color);
+  display: block;
 }
 .curent{
     color: var(--heder-mailto-color);
@@ -131,13 +144,13 @@ body {
 
 
 /*main*/
-
-.container-title{
-    /* height: 600px;   */
+.hero{
 background: #2F303A;
 padding-top: 200px;
 padding-bottom: 280px;
 }
+/* .container-title{
+    /* height: 600px;   */
 
 
 .title{
@@ -149,7 +162,7 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: var(--section-h);
-margin: 40px;
+margin-bottom: 30px;
 }
 .btn{
 font-weight: 700;
@@ -180,11 +193,16 @@ color: var(--section-h);
     cursor: pointer;}
    
     /*Особенности работы*/
+
+ .section{
+     padding-top: 94px;
+     padding-bottom: 94px;
+    
+ }   
 .features-list{
     display: flex;
     justify-content: center;
-    padding-top: 94px;
-    padding-bottom: 94px;
+   
 }
 .features-item+.features-item{
     margin-left: 30px;
@@ -207,10 +225,12 @@ color: var(--heder-tel-color);
 
 
 /*Чем мы занимаемся*/
-
+.work{
+    padding-top: 0;
+}
 .work-list{
     display: flex;
-    padding-bottom: 94px;
+    /* padding-bottom: 94px; */
 }
 .work-item+.work-item{
     margin-left: 30px;
@@ -226,11 +246,11 @@ margin-bottom: 50px;
 }
 
 /*Наша команда*/
-.container-about{
+.about{
     
     background-color: #F5F4FA;
-    padding-top: 94px;
-    padding-bottom: 94px;
+    /* padding-top: 94px;
+    padding-bottom: 94px; */
 }
 .about-list{
     display: flex;
@@ -252,6 +272,10 @@ letter-spacing: 0.03em;
 color: var(--heder-link-mailto);
 margin-bottom: 50px;
 }
+.card{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
 .about-title-name{
 font-weight: 500;
 font-size: 16px;
@@ -259,7 +283,6 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--heder-link-mailto);
-margin-top: 30px;
 margin-bottom: 10px;
 }
 .about-text-profession{
@@ -268,21 +291,21 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: var(--heder-tel-color);
-margin-bottom: 30px;
 }
 /*PORTFOLIO*/
 .heder-portfolio{
     color: #FFFFFF;
 }
 .list-portfolio{
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
-    padding-top: 66px;
-    padding-bottom: 56px;
+    /* padding-top: 66px;
+    padding-bottom: 56px; */
 }
 .list-bt,
  .list-btn:last-child {
-     margin: 8px;
+     /* margin: 8px; */
      border: none;
  }
     
@@ -326,28 +349,20 @@ border-radius: 4px;
 /*foto-list*/
 
 .foto-list{
-    padding: 0;
-    margin: 0;
-    list-style: none;
     display: flex;
     flex-wrap: wrap;
     margin-left: -30px;
     margin-top: -30px;
-    padding-bottom: 94px;
 }
 .foto-list>.item-img{
       flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
 }
-.img{
-    display: block;
-    max-width: 100%;
-}
+
 
 .item-img{
     background: #FFFFFF;
-border: 1px solid #EEEEEE;
 box-sizing: border-box;
 }
 .foto-title{
@@ -372,7 +387,7 @@ color: var(--heder-tel-color);
 
 
 /*footer*/
-.container-footer{
+.footer{
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
@@ -380,13 +395,15 @@ color: var(--heder-tel-color);
 .logotip{
     margin-bottom: 20px;
 }
-.footer-link{padding-bottom: 20px;}
-.footer-address{
+/* .footer-link{padding-bottom: 20px;} */
+
+.address-item{
     margin-bottom: 9px;
 }
-.footer-tel{
-    margin-top: 9px;
+.address-item:last-child{
+    margin-bottom: 0;
 }
+
 .footer-link{
     font-family: "Raleway", sans-serif;
 font-weight: 700;
