@@ -19,10 +19,11 @@ ul {
     margin: 0;
     padding: 0;
     }
-.header-item, .heder-connekt, .footer-list{
- list-style: none; 
- text-decoration: none;  
+a{
+    text-decoration: none;
 }
+
+
 img{
     display: block;
     max-width: 100%;
@@ -40,6 +41,8 @@ img{
 .section{
     padding-top: 94px;
     padding-bottom: 94px;
+    width: 1600px;
+    margin: auto;
 }
 
 /*header*/
@@ -48,11 +51,7 @@ img{
     border-bottom: 1px solid #ECECEC;
     
   }
-  ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    }
+  
 .heder-logo{
     display: flex;
     align-items: center;
@@ -418,7 +417,6 @@ color: var(--heder-tel-color);
 .logotip{
     margin-bottom: 20px;
 }
-/* .footer-link{padding-bottom: 20px;} */
 
 .address-item{
     margin-bottom: 9px;
